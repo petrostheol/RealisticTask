@@ -1,0 +1,8 @@
+<launch>
+
+ <node name="thermal_sensor" pkg="simple_robot" type="thermal_sensor.py"/>
+ <node name="filter" pkg="simple_robot" type="filter.py" output="screen"/>
+ <node name="location_server" pkg="simple_robot" type="location_server.py" output="screen"/>
+ <node name="location_client" pkg="simple_robot" type="location_client.py" output="screen"/>
+
+</launch>
